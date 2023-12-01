@@ -1,0 +1,31 @@
+{
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "name": "react_app",
+  "version": "1.0.0",
+  "description": "react",
+  "source": "/src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/velagadarakshitha/React.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "velagadarakshitha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/velagadarakshitha/React/issues"
+  },
+  "homepage": "https://github.com/velagadarakshitha/React#readme"
+}
