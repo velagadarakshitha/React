@@ -12,7 +12,6 @@ const header = React.createElement(
      React.createElement("h2",{key :"h2"},"This is  created using h2 tag"),      
      React.createElement("h3",{key :"h3"},"This is  created using h3 tag"),        
     ]);                                                             
-  console.log(header)
 //ReactDOM.render(header,document.getElementById("root"))
 
 
