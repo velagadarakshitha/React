@@ -1,0 +1,64 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    background-color: #ffd89d;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.logo {
+    padding-top: 5px;
+}
+
+.text {
+    width: 25%;
+}
+
+#search_type {
+    width: 70%;
+    height: 25px;
+    border-radius: 13px;
+    border: 1px solid black;
+}
+
+#button {
+    height: 30px;
+    border-radius: 13px;
+    border: 1px solid black;
+}
+
+.icon {
+    margin: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .text {
+        width: 50%; 
+    }
+
+    #search_type {
+        width: 50%; 
+    }
+
+    #button {
+        height: 30px; 
+       
+    }
+
+    .icon {
+        margin: 20px; 
+    }
+}
+
+
+
+
+

@@ -1,5 +1,9 @@
 import React from  'react';
 import ReactDOM from 'react-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import image from './images/logo.jpg';
+import './style.css';
+
 
 //(1)create a nested header element using react.create element(h1,h2,h3indide a dive with class "title"
 const header = React.createElement(
@@ -14,12 +18,13 @@ const header = React.createElement(
 
 //(2)create the same element using jsx
 const header1 = (
-        <div className='Title'>
-         <h1>"This is using jsx "</h1>
-         <h2>"This is  using jsx"</h2>
-         <h3>"This is  using jsx"</h3>
-        </div>
-       );
+  <div className='Title'>
+    <h1>This is using jsx</h1>
+    <h2>This is using jsx</h2>
+    <h3>This is using jsx</h3>
+  </div>
+);
+
 //ReactDOM.render(header1,document.getElementById("root"))
 
 //(3)create a functional component of the same with jsx
@@ -47,8 +52,7 @@ const header3 = (
 //ReactDOM.render(header3,document.getElementById("root"))
 
 
-//composition of component (App a component inside another)
-
+//(5)composition of component (App a component inside another)
 const Header4 = () => {
     return(
         <h1>"  component inside another component"</h1>,
@@ -57,10 +61,10 @@ const Header4 = () => {
 }   
 //ReactDOM.render(<Header2/>,document.getElementById("root"))
 
-//{<title component>},{<title component/>},{{<title component>}vs{</title component>}},
+//(6){<title component>},{<title component/>},{{<title component>}vs{</title component>}},
 
 const TitleElement = () => {
-  return <h2 style={{ color: "red" }}>This Title Element</h2>;        // This is Title Component
+  return <h2 style={{ color: "red" }}>This is title element</h2>;        // This is Title Component
 }; 
 
 const Header = () => {
@@ -71,5 +75,30 @@ const Header = () => {
       </div>
   );
 };
-
 //ReactDOM.render(<Header/>,document.getElementById("root"))
+//bg color -#ffd89d
+
+
+const Navbar = () => {
+  return (
+    <>
+      <div className='Header'>
+        <div className='logo'>
+        <img src={image} alt="Logo" height="77px" width= "77px" />
+        </div>
+        <div className='text'>
+          <input id='search_type' type='text' placeholder='Search Any Thing'></input>
+          <button id='button'>Search</button>
+        </div>
+        <div className='icon'>
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="19" viewBox="0 0 448 512"><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+        </div>
+      </div>
+    </>
+  );
+};
+
+ReactDOM.render(<Navbar/>, document.getElementById("root"));
+
+
+
