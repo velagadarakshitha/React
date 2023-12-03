@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 
 //(1)create a nested header element using react.create element(h1,h2,h3indide a dive with class "title"
 const header = React.createElement(
-    "div",{className: "Title", key:"Title"},                       //div is the parent
-    [React.createElement("h1",{key :"h1"},"This is created using h1 tag"),       //key is used to unique identify the element inside a array
-     React.createElement("h2",{key :"h2"},"This is  created using h2 tag"),       //{}->we add attributes inside this className or id 
-     React.createElement("h3",{key :"h3"},"This is  created using h3 tag"),        //[]-->we created a array and written react element inside a array 
-    ]);                                                              //[]--> elements inside this array are children for parent div
+    "div",{className: "Title", key:"Title"},                      
+    [React.createElement("h1",{key :"h1"},"This is created using h1 tag"),      
+     React.createElement("h2",{key :"h2"},"This is  created using h2 tag"),      
+     React.createElement("h3",{key :"h3"},"This is  created using h3 tag"),        
+    ]);                                                             
   console.log(header)
 //ReactDOM.render(header,document.getElementById("root"))
 
@@ -60,7 +60,7 @@ const Header4 = () => {
 //{<title component>},{<title component/>},{{<title component>}vs{</title component>}},
 
 const TitleElement = () => {
-  return <h2 style={{ color: "red" }}>This Title Element</h2>;        // This is Title Component
+  return <h2 style={{ color: "red" }}>This Title Element</h2>;       
 }; 
 
 const Header = () => {
